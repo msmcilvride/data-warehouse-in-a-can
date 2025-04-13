@@ -1,0 +1,9 @@
+[project]
+name = "data-warehouse-in-a-can"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "functions-framework>=3.8.2",
+    "google-cloud-pubsub>=2.29.0",
+]
