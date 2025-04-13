@@ -220,7 +220,7 @@ resource "google_cloud_scheduler_job" "schedule_producer" {
 
     oidc_token {
       service_account_email = google_cloudfunctions_function.event_producer.service_account_email
-      audience = "https://us-central1-dwiac-0001.cloudfunctions.net/event-producer"
+      # audience = "https://us-central1-dwiac-0001.cloudfunctions.net/event-producer"  # todo: avoid using this lol
     }
   }
 
