@@ -22,7 +22,5 @@ def publish_event(request):
         }
     }
 
-    print("hello")
-
     publisher.publish(topic_path, json.dumps(dummy_event).encode("utf-8"))
     return "Event published"
